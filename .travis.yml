@@ -7,7 +7,7 @@ php :
     - hhvm
 
 before_script:
-    - composer install --presfer-dist --dev -o
+    - composer install --prefer-dist --dev -o
 
 script:
     - phpunit
