@@ -8,6 +8,9 @@ namespace OKLM\StringGenerator;
  */
 class PasswordGenerator
 {
+    const PASSWORD_EASY = 0;
+    const PASSWORD_MEDIUM = 1;
+    const PASSWORD_HARD = 2;
     /**
      * @var string
      */
@@ -20,10 +23,6 @@ class PasswordGenerator
      * @var string
      */
     private static $strenghtHard = '$€£%!#&éèà';
-
-    const PASSWORD_EASY = 0;
-    const PASSWORD_MEDIUM = 1;
-    const PASSWORD_HARD = 2;
 
     /**
      * Constructor
@@ -59,7 +58,6 @@ class PasswordGenerator
                     break;
             }
         }
-
 
         $password = '';
 
