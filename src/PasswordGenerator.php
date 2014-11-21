@@ -36,25 +36,30 @@ class PasswordGenerator
     /**
      * @param int $length
      * @param $strength
+     * @param $char
      *
      * @return string
      *
      * @throws \Exception
      */
-    public static function generate($length = 10, $strength)
+    public static function generate($length = 10, $char = '', $strength = '')
     {
-        switch($strength)
+        if ($strength)
         {
-            case self::PASSWORD_EASY:
-                $char = self::$strenghtEasy;
-                break;
-            case self::PASSWORD_MEDIUM:
-                $char = self::$strenghtEasy.self::$strenghtMedium;
-                break;
-            case self::PASSWORD_HARD:
-                $char = self::$strenghtEasy.self::$strenghtMedium.self::$strenghtHard;
-                break;
+            switch($strength)
+            {
+                case self::PASSWORD_EASY:
+                    $char = self::$strenghtEasy;
+                    break;
+                case self::PASSWORD_MEDIUM:
+                    $char = self::$strenghtEasy.self::$strenghtMedium;
+                    break;
+                case self::PASSWORD_HARD:
+                    $char = self::$strenghtEasy.self::$strenghtMedium.self::$strenghtHard;
+                    break;
+            }
         }
+
 
         $password = '';
 
