@@ -11,5 +11,5 @@ This lib generates passwords
 ```php
 require __DIR__.'/vendor/autoload.php';
 
-echo \OKLM\StringGenerator\PasswordGenerator::generate(10, \OKLM\StringGenerator\PasswordGenerator::PASSWORD_EASY, '').'<br>';
+echo \OKLM\StringGenerator\PasswordGenerator::generate(10, \OKLM\StringGenerator\PasswordGenerator::PASSWORD_EASY, '');
 ```
