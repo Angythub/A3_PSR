@@ -12,11 +12,10 @@
          bootstrap="./vendor/autoload.php"
         >
     <testsuites>
-        <testsuite name="OKLM String Generator Test Suite">
+        <testsuite name="Web1 String Generator Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
-
     <filter>
         <whitelist>
             <directory>./</directory>
