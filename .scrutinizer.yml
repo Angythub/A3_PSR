@@ -9,6 +9,8 @@ tools:
         config: { level: all }
     sensiolabs_security_checker: true
     external_code_coverage: true
+        timeout: 600
+        runs: 2
 
 filter:
     paths: [src/*]
